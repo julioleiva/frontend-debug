@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fichaje Diario</title>
+</head>
+
+<body class="p-4">
+    <h1 class="text-2xl font-bold mb-4">Fichaje Diario</h1>
+    <form id="fichajeForm" class="mb-4">
+        <div class="mb-4">
+            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre:</label>
+            <input type="text" id="nombre" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+            <p id="errorNombre" class="text-red-500 text-xs mt-1 hidden">El campo Nombre es obligatorio.</p>
+        </div>
+        <div class="mb-4">
+            <label for="fecha" class="block text-sm font-medium text-gray-700">Fecha:</label>
+            <input type="date" id="fecha" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+        </div>
+        <div class="mb-4">
+            <label for="horaE" class="block text-sm font-medium text-gray-700">Hora Entrada:</label>
+            <input type="time" id="horaE" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+        </div>
+        <div class="mb-4">
+            <label for="horaS" class="block text-sm font-medium text-gray-700">Hora Salida:</label>
+            <input type="time" id="horaS" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+        </div>
+        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" data-testid="submit">Fichar</button>
+    </form>
+    <div id="resultadosEntrada"></div>
+    <div id="resultadosSalida"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
