@@ -1,5 +1,3 @@
-Aquí tienes el contenido en formato Markdown:
-
 ### Índice
 1. Profiling y Performance Audits en CSS y JavaScript
 2. Optimización del rendimiento en CSS: Repaint, Reflow y más
