@@ -1,9 +1,9 @@
-Aquí tienes el contenido en formato Markdown:
 
 ### Índice
-1. Profiling y Performance Audits en CSS y JavaScript
-2. Optimización del rendimiento en CSS: Repaint, Reflow y más
+1. Blackboxing
 
-
-### Enlaces de Interés
-- [Record, replay, and measure user flows](https://developer.chrome.com/docs/devtools/recorder/)
+### Pasos para el Blackboxing con Lodash:
+1. Abre Chrome DevTools (F12 o Ctrl+Shift+I).
+2. Ve a la pestaña "Sources".
+3. Haz clic derecho en el archivo lodash.min.js en el panel izquierdo.
+4. Selecciona "Add to blackbox" o "Add Ignoring List". Esto evitará que el depurador entre en el código de Lodash durante la depuración.
